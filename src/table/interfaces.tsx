@@ -241,6 +241,7 @@ export namespace TableProps {
     width?: number | string;
     minWidth?: number | string;
     maxWidth?: number | string;
+    style?: React.CSSProperties;
   } & SortingColumn<T>;
 
   export type SelectionType = 'single' | 'multi';

@@ -317,11 +317,12 @@ const InternalTable = React.forwardRef(
                             key={getColumnKey(column, colIndex)}
                             style={
                               resizableColumns
-                                ? {}
+                                ? { ...column.style }
                                 : {
                                     width: column.width,
                                     minWidth: column.minWidth,
                                     maxWidth: column.maxWidth,
+                                    ...column.style,
                                   }
                             }
                             column={column}
